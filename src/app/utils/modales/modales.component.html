@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+    </ion-buttons>
+    <ion-title>IMC</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="confirm()" [strong]="true">Aceptar</ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-content class="ion-padding">
+  <ion-item>
+    Tu IMC es {{imc}}.
+  </ion-item>
+</ion-content>

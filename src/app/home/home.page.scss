@@ -1,0 +1,62 @@
+#container {
+  text-align: center;
+
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  box-shadow: 5px red;
+  
+}
+
+#container strong {
+  font-size: 20px;
+  line-height: 26px;
+}
+
+#container p {
+  font-size: 16px;
+  line-height: 22px;
+
+  color: #8c8c8c;
+
+  margin: 0;
+}
+
+#container a {
+  text-decoration: none;
+}
+
+.flex{
+  display: flex;
+}
+
+.title{
+  color: aquamarine;
+  font-weight: bold;
+  background-color: burlywood;
+}
+
+.center{
+  display: flex;
+  align-content: center;
+}
+
+.end{
+  display: flex;
+  align-content: flex-end;
+}
+
+ion-card{
+  background-color: gainsboro;
+}
+
+ion-input{
+  border: none;
+}
+
+.error{
+  color: red;
+  font-size: 15px;
+}

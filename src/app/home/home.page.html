@@ -1,0 +1,40 @@
+
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title class="ion-text-right" size="large">Calcula tu Imc</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-card>
+    <ion-row class="ion-margin">
+      <form [formGroup]="pesoForm">
+        <div class="end">
+          <ion-input name="peso" type="number" formControlName="medida" label="Peso" labelPlacement="floating" placeholder="Introduce tu peso"></ion-input>
+          <p class="error" *ngIf="errorPeso"> Peso no valido</p>
+          <ion-select formControlName="unidad" label="Kg/Lb">
+            <ion-select-option value="1">Kg</ion-select-option>
+            <ion-select-option value="2">Lb</ion-select-option>
+          </ion-select>
+          </div>
+        </form>
+    </ion-row>
+    <ion-row class="ion-margin">
+      <form [formGroup]="alturaForm">
+        <div class="flex">
+          <ion-input name="altura" label="Altura" labelPlacement="floating" placeholder="Altura en cm" type="number" max="220" formControlName="medida"></ion-input>
+          <p class="error" *ngIf="errorAltura"> Peso no valido</p>
+        </div>
+      </form>
+    </ion-row>
+    <ion-button class="center ion-margin" id="open-modal" (click)="calcular();">Calcular</ion-button>
+    <!-- <ion-button (click)="openModal()" class="center ion-margin" expand="block" fill="clear" shape="round"> -->
+      <!-- Click me
+    </ion-button> -->
+    
+    
+
+  </ion-card>
+  
+</ion-content>
